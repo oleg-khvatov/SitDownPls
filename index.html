@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Playfairdisplayblack.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./image/svg/favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="./libs/choices.min.css">
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.min.css"> <!--для разработки и для build-версии -->
+  <title>SitDownPls</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-top-320">
+      <div class="container header-top-320__container">
+        <a class="header__logo-link-320" href="/">
+          <img class="logo header__logo header__logo--320" src="./image/sprite.svg#logo" alt="Логотип">
+        </a>
+      </div>
+    </div>
+    <div class="header-top">
+      <div class="container header-top__container">
+        <form class="header-top__form">
+          <label class="header-top__label" for="city">Ваш регион:</label>
+          <select class="header-top__select" name="city" id="city">
+            <option value="Moscow" selected>Москва</option>
+            <option value="Kazan">Казань</option>
+            <option value="Ufa">Уфа</option>
+            <option value="Perm">Пермь</option>
+          </select>
+        </form>
+
+        <a class="header-top__phone" href="tel:+74958854547">
+          <svg class="header-top__handset">
+            <use xlink:href="./image/sprite.svg#phone"></use>
+          </svg>
+          +7 (495) 885-45-47
+        </a>
+
+        <nav class="header__nav header-top__nav">
+          <ul class="header__list header-top__list">
+            <li class="header-top__item">
+              <a class="header__link header-top__link" href="#">О компании</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header__link header-top__link" href="#">Гарантия и возврат</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header__link header-top__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header__link header-top__link" href="#">Дизайн-решение</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header-top header-top-1024">
+      <div class="container header-top__container header-top__container--1024">
+        <nav class="header__nav header-top__nav header-top__nav--1024">
+          <ul class="header__list header-top__list">
+            <li class="header-top__item">
+              <a class="header__link header-top__link" href="#">О компании</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header__link header-top__link" href="#">Гарантия и возврат</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header__link header-top__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header__link header-top__link" href="#">Дизайн-решение</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="iconlink iconlink--1024" href="#" aria-label="Пользователь">
+          <svg class="iconlink__user">
+            <use xlink:href="./image/sprite.svg#user"></use>
+          </svg>
+        </a>
+        <a class="iconlink iconlink--1024" href="#" aria-label="Корзина">
+          <span class="iconlink__span">0</span>
+          <svg class="iconlink__basket">
+            <use xlink:href="./image/sprite.svg#basket"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="header-middle">
+      <div class="container header-middle__container">
+        <button class="burger header__burger" id="burger-open">
+          <svg class="burger__icon">
+            <use xlink:href="./image/sprite.svg#burger"></use>
+          </svg>
+        </button>
+        <div class="burger-menu" id="burger-menu">
+          <div class="container burger-menu__container">
+            <button class="burger header__burger header__burger--close" id="burger-close">
+              <svg class="burger__icon">
+                <use xlink:href="./image/sprite.svg#burger_close"></use>
+              </svg>
+            </button>
+            <nav class="header__nav header__nav--768">
+              <ul class="header__list-768">
+                <li class="header-middle__item-1">
+                  <a class="header__link header-middle__link" href="/catalog.html">Каталог</a>
+                </li>
+                <li class="header-middle__item-2">
+                  <a class="header__link header-middle__link" href="#">Магазины</a>
+                </li>
+                <li class="header-middle__item-3">
+                  <a class="header__link header-middle__link" href="#">Шоу-рум</a>
+                </li>
+                <li class="header-middle__item-4">
+                  <a class="header__link header-middle__link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="header-middle__item-5">
+                  <a class="header__link header-middle__link" href="#">Дисконт</a>
+                </li>
+                <li class="header-middle__item-6">
+                  <a class="header__link header-middle__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="container burger-menu__container burger-menu__container--service">
+            <ul class="service header__service">
+              <li class="service__item service__item--1">
+                <ul class="service__links-list">
+                  <li class="service__links-item">
+                    <a class="service__link" href="#">О компании</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="service__item service__item--2">
+                <ul class="service__links-list">
+                  <li class="service__links-item">
+                    <a class="service__link" href="#">Гарантия и возврат</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="service__item service__item--3">
+                <ul class="service__links-list">
+                  <li class="service__links-item">
+                    <a class="service__link" href="#">Корпоративным клиентам</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="service__item service__item--4">
+                <ul class="service__links-list">
+                  <li class="service__links-item">
+                    <a class="service__link" href="#">Дизайн-решение</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="header__logo-link" href="/">
+          <img class="logo header__logo" src="./image/sprite.svg#logo" alt="Логотип">
+        </a>
+        <a class="iconlink iconlink--768" href="#" aria-label="Пользователь">
+          <svg class="iconlink__user">
+            <use xlink:href="./image/sprite.svg#user"></use>
+          </svg>
+        </a>
+        <a class="iconlink iconlink--768" href="#" aria-label="Корзина">
+          <span class="iconlink__span">0</span>
+          <svg class="iconlink__basket">
+            <use xlink:href="./image/sprite.svg#basket"></use>
+          </svg>
+        </a>
+        <nav class="header__nav header-middle__nav">
+          <ul class="header__list header-middle__list">
+            <li class="header-middle__item">
+              <a class="header__link header-middle__link" href="/catalog.html">Каталог</a>
+            </li>
+            <li class="header-middle__item">
+              <a class="header__link header-middle__link" href="#">Магазины</a>
+            </li>
+            <li class="header-middle__item">
+              <a class="header__link header-middle__link" href="#">Шоу-рум</a>
+            </li>
+            <li class="header-middle__item">
+              <a class="header__link header-middle__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="header-middle__item">
+              <a class="header__link header-middle__link" href="#">Дисконт</a>
+            </li>
+            <li class="header-middle__item">
+              <a class="header__link header-middle__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container header-bottom__container">
+        <form class="header-bottom__form">
+          <div class="header-bottom__wrapper">
+            <input class="header-bottom__input" type="text" placeholder="Я хочу купить...">
+            <button class="button header-bottom__button button--320" type="submit">
+              <svg class="button-arrow" width="32" height="32" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="15" stroke-width="2"/>
+                <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <select class="header-bottom__select" name="category" id="category">
+            <option selected>Категория</option>
+            <option value="sofas">Диваны</option>
+            <option value="armchairs">Кресла</option>
+            <option value="poufs">Пуфы</option>
+            <option value="beds">Кровати</option>
+            <option value="pedestals">Тумбы</option>
+            <option value="dressers">Комоды</option>
+            <option value="chairs">Стулья</option>
+            <option value="tables">Столы</option>
+            <option value="accessories">Аксессуары</option>
+          </select>
+        </form>
+        <a class="iconlink" href="#" aria-label="Пользователь">
+          <svg class="iconlink__user">
+            <use xlink:href="./image/sprite.svg#user"></use>
+          </svg>
+        </a>
+        <a class="iconlink" href="#" aria-label="Корзина">
+          <span class="iconlink__span">0</span>
+          <svg class="iconlink__basket">
+            <use xlink:href="./image/sprite.svg#basket"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="visually-hidden">Интернет магазин "SitDownPls"</h1>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <h2 class="visually-hidden">Реклама</h2>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper" id="swiper-1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-slide--1">
+            <div class="container hero__container">
+              <p class="hero__content">Скидка 15% <br>на первую покупку</p>
+              <a class="link hero__link" href="#">Получить!</a>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--2">
+            <div class="container hero__container">
+              <p class="hero__content hero__content--white">1000+ аксессуаров <br>для дома</p>
+              <a class="link hero__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--3">
+            <div class="container hero__container">
+              <p class="hero__content">Коллекция стильного и яркого текстиля</p>
+              <a class="link hero__link" href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="container hero__container hero__container--320">
+        <a class="link hero__link hero__link--320" href="#">Получить!</a>
+      </div>
+    </section>
+
+    <section class="special">
+      <div class="container special__container">
+        <h2 class="title special__title">Специальные предложения</h2>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev button">
+          <svg class="button-arrow" width="32" height="32" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle r="15" transform="matrix(-1 0 0 1 16 16)" stroke-width="2"/>
+            <path d="M18 11L13 16L18 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="swiper-button-next button">
+          <svg class="button-arrow" width="32" height="32" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="15" stroke-width="2"/>
+            <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="swiper" id="swiper-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--1">
+              <article class="card special__card">
+                <a class="card__sticker special__sticker" href="#">- 9 000</a>
+                <div class="card__top special__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/special/1.png">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/special/1.png">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/special/1.png">
+                    <img class="card__image" src="./image/320/special/1.png" alt="Фото товара">
+                  </picture>
+                </div>
+                <div class="card__bottom special__bottom">
+                  <h3 class="card__title special__title-h3">Кресло велюровое “X-24”</h3>
+                  <div class="card__price">
+                    <span class="card__new-price">15 990 руб</span>
+                    <span class="card__old-price special__old-price">24 990 руб</span>
+                  </div>
+                  <a class="link card__link" href="#">Купить</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--2">
+              <article class="card special__card special__card--2">
+                <a class="card__sticker special__sticker" href="#">- 10 000</a>
+                <div class="card__top special__top special__top--2">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/special/2.png">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/special/2.png">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/special/2.png">
+                    <img class="card__image" src="./image/320/special/2.png" alt="Фото товара">
+                  </picture>
+                </div>
+                <div class="card__bottom special__bottom">
+                  <h3 class="card__title special__title-h3">Диван тканевый <br>“Z-44”</h3>
+                  <div class="card__price">
+                    <span class="card__new-price">22 990 руб</span>
+                    <span class="card__old-price special__old-price">32 990 руб</span>
+                  </div>
+                  <a class="link card__link" href="#">Купить</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--3">
+              <article class="card special__card">
+                <a class="card__sticker special__sticker" href="#">- 600</a>
+                <div class="card__top special__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/special/3.png">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/special/3.png">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/special/3.png">
+                    <img class="card__image" src="./image/320/special/3.png" alt="Фото товара">
+                  </picture>
+                </div>
+                <div class="card__bottom special__bottom">
+                  <h3 class="card__title special__title-h3">Будильник <br>“Quartz-23”</h3>
+                  <div class="card__price">
+                    <span class="card__new-price">1 290 руб</span>
+                    <span class="card__old-price special__old-price">1 890 руб</span>
+                  </div>
+                  <a class="link card__link" href="#">Купить</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--4">
+              <article class="card special__card">
+                <a class="card__sticker special__sticker" href="#">- 300</a>
+                <div class="card__top special__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/special/4.png">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/special/4.png">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/special/4.png">
+                    <img class="card__image" src="./image/320/special/4.png" alt="Фото товара">
+                  </picture>
+                </div>
+                <div class="card__bottom special__bottom">
+                  <h3 class="card__title special__title-h3">Мини-скульптура “Oh my deer”</h3>
+                  <div class="card__price">
+                    <span class="card__new-price">690 руб</span>
+                    <span class="card__old-price special__old-price">990 руб</span>
+                  </div>
+                  <a class="link card__link" href="#">Купить</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--5">
+              <article class="card special__card special__card--5">
+                <a class="card__sticker special__sticker" href="#">- 10 000</a>
+                <div class="card__top special__top special__top--5">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/special/5.png">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/special/5.png">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/special/5.png">
+                    <img class="card__image" src="./image/320/special/5.png" alt="Фото товара">
+                  </picture>
+                </div>
+                <div class="card__bottom special__bottom">
+                  <h3 class="card__title special__title-h3">Диван вел-флок “Z-85”</h3>
+                  <div class="card__price">
+                    <span class="card__new-price">22 990 руб</span>
+                    <span class="card__old-price special__old-price">32 990 руб</span>
+                  </div>
+                  <a class="link card__link" href="#">Купить</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--6">
+              <article class="card special__card">
+                <a class="card__sticker special__sticker" href="#">- 700</a>
+                <div class="card__top special__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/special/6.png">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/special/6.png">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/special/6.png">
+                    <img class="card__image" src="./image/320/special/6.png" alt="Фото товара">
+                  </picture>
+                </div>
+                <div class="card__bottom special__bottom">
+                  <h3 class="card__title special__title-h3">Термометр + гидрометр “H-18”</h3>
+                  <div class="card__price">
+                    <span class="card__new-price">1 390 руб</span>
+                    <span class="card__old-price special__old-price">2 090 руб</span>
+                  </div>
+                  <a class="link card__link" href="#">Купить</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rating">
+      <div class="container rating__container">
+        <h2 class="title rating__title">Высокий рейтинг</h2>
+        <ul class="rating__list">
+          <li class="rating__item rating__item--1">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">5,0</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/1.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/1.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/1.png">
+                  <img class="card__image" src="./image/320/rating/1.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван кожаный <br>“R-94”</h3>
+                <p class="card__old-price rating__old-price">94 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--2">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,9</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/2.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/2.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/2.png">
+                  <img class="card__image" src="./image/320/rating/2.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван апартековый “T-75”</h3>
+                <p class="card__old-price rating__old-price">69 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--3">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,8</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/3.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/3.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/3.png">
+                  <img class="card__image" src="./image/320/rating/3.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван тканевый <br>“D-31”</h3>
+                <p class="card__old-price rating__old-price">28 490 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--4">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,8</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/4.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/4.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/4.png">
+                  <img class="card__image" src="./image/320/rating/4.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван велюровый “Y-68”</h3>
+                <p class="card__old-price rating__old-price">22 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--5">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,8</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/5.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/5.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/5.png">
+                  <img class="card__image" src="./image/320/rating/5.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван из&nbsp;шинила “W-95”</h3>
+                <p class="card__old-price rating__old-price">22 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--6">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,8</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/6.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/6.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/6.png">
+                  <img class="card__image" src="./image/320/rating/6.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван флоковый “G-41”</h3>
+                <p class="card__old-price rating__old-price">17 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--7">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,8</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/7.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/7.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/7.png">
+                  <img class="card__image" src="./image/320/rating/7.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван шиниловый “V-43”</h3>
+                <p class="card__old-price rating__old-price">19 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--8">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,7</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/8.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/8.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/8.png">
+                  <img class="card__image" src="./image/320/rating/8.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван велюровый “S-99”</h3>
+                <p class="card__old-price rating__old-price">19 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--9">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,7</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/9.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/9.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/9.png">
+                  <img class="card__image" src="./image/320/rating/9.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван из кожзама “F-85”</h3>
+                <p class="card__old-price rating__old-price">26 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--10">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,6</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/10.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/10.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/10.png">
+                  <img class="card__image" src="./image/320/rating/10.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван флоковый “H-64”</h3>
+                <p class="card__old-price rating__old-price">25 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--11">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,6</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/11.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/11.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/11.png">
+                  <img class="card__image" src="./image/320/rating/11.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван флоковый “H-58”</h3>
+                <p class="card__old-price rating__old-price">23 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+          <li class="rating__item rating__item--12">
+            <article class="card rating__card">
+              <span class="card__sticker rating__sticker">4,6</span>
+              <div class="card__top rating__top">
+                <picture>
+                  <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/rating/12.png">
+                  <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/rating/12.png">
+                  <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/rating/12.png">
+                  <img class="card__image" src="./image/320/rating/12.png" alt="Фото товара">
+                </picture>
+              </div>
+              <div class="card__bottom rating__bottom">
+                <h3 class="card__title rating__title-h3">Диван из кожзама “R-43”</h3>
+                <p class="card__old-price rating__old-price">33 990 руб</p>
+                <a class="link card__link rating__link" href="#">Купить</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="rating__button-wrapper">
+          <button class="link rating__button" id="more" type="button">Смотреть больше товаров</button>
+        </div>
+      </div>
+    </section>
+    <section class="new-products">
+      <div class="new-products__wrapper">
+        <div class="container new-products__container">
+          <h2 class="title new-products__title">
+            <span class="new-products__span">Оксфорд 1950</span> Новая коллекция изысканных кресел
+          </h2>
+          <a class="link new-products__link" href="#">Ознакомиться</a>
+        </div>
+      </div>
+      <div class="container new-products__container new-products__container--320">
+        <a class="link new-products__link new-products__link--320" href="#">Ознакомиться</a>
+      </div>
+    </section>
+    <section class="top">
+      <div class="container top__container">
+        <h2 class="title top__title">Топ категории</h2>
+        <ul class="top__list">
+          <li class="top__item top__item--1">
+            <article class="card top__card top__card--1">
+              <ul class="top__card-list">
+                <li class="top__card-item">
+                  <a class="top__card-link" href="#">Прямые</a>
+                </li>
+                <li class="top__card-item">
+                  <a class="top__card-link" href="#">Угловые</a>
+                </li>
+                <li class="top__card-item">
+                  <a class="top__card-link" href="#">Модульные</a>
+                </li>
+              </ul>
+              <div class="card__title-wrapper top__card-title-wrapper">
+                <h3 class="card__title top__card-title">Диваны</h3>
+                <a class="top__link top__link--320 top__link--card-1" href="#" aria-label="В каталог">
+                  <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                    <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+              <a class="top__link" href="#">В каталог&nbsp;
+                <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                  <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </article>
+          </li>
+          <li class="top__item top__item--2">
+            <article class="card top__card top__card--2">
+              <ul class="top__card-list top__card-list--320">
+                <li class="top__card-item top__card-item--320">
+                  <a class="top__card-link top__card-link--320" href="#">Мягкие</a>
+                </li>
+                <li class="top__card-item top__card-item--320">
+                  <a class="top__card-link top__card-link--320" href="#">Кресла-кровати</a>
+                </li>
+              </ul>
+              <div class="card__title-wrapper top__card-title-wrapper">
+                <h3 class="card__title top__card-title top__card-title--320">Кресла</h3>
+                <a class="top__link top__link--320" href="#" aria-label="В каталог">
+                  <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                    <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+              <a class="top__link" href="#">В каталог&nbsp;
+                <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                  <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </article>
+          </li>
+          <li class="top__item top__item--3">
+            <article class="card top__card top__card--3">
+              <ul class="top__card-list top__card-list--320">
+                <li class="top__card-item top__card-item--320">
+                  <a class="top__card-link top__card-link--320" href="#">Односпальные</a>
+                </li>
+                <li class="top__card-item top__card-item--320">
+                  <a class="top__card-link top__card-link--320" href="#">Двуспальные</a>
+                </li>
+              </ul>
+              <div class="card__title-wrapper top__card-title-wrapper">
+                <h3 class="card__title top__card-title top__card-title--320">Кровати</h3>
+                <a class="top__link top__link--320" href="#" aria-label="В каталог">
+                  <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                    <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+              <a class="top__link" href="#">В каталог&nbsp;
+                <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                  <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </article>
+          </li>
+          <li class="top__item top__item--4">
+            <article class="card top__card top__card--4">
+              <ul class="top__card-list top__card-list--320">
+                <li class="top__card-item top__card-item--320">
+                  <a class="top__card-link top__card-link--320" href="#">Тумбы</a>
+                </li>
+                <li class="top__card-item top__card-item--320">
+                  <a class="top__card-link top__card-link--320" href="#">Комоды</a>
+                </li>
+              </ul>
+              <div class="card__title-wrapper top__card-title-wrapper">
+                <h3 class="card__title top__card-title top__card-title--320">Тумбы и&nbsp;комоды</h3>
+                <a class="top__link top__link--320" href="#" aria-label="В каталог">
+                  <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                    <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+              <a class="top__link" href="#">В каталог&nbsp;
+                <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                  <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </article>
+          </li>
+          <li class="top__item top__item--5">
+            <article class="card top__card top__card--5">
+              <ul class="top__card-list top__card-list--320">
+                <li class="top__card-item top__card-item--320">
+                  <a class="top__card-link top__card-link--320" href="#">Деревянные</a>
+                </li>
+                <li class="top__card-item top__card-item--320">
+                  <a class="top__card-link top__card-link--320" href="#">Металлокаркас</a>
+                </li>
+              </ul>
+              <div class="card__title-wrapper top__card-title-wrapper">
+                <h3 class="card__title top__card-title top__card-title--320">Стулья</h3>
+                <a class="top__link top__link--320" href="#" aria-label="В каталог">
+                  <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                    <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+              <a class="top__link" href="#">В каталог&nbsp;
+                <svg class="button-arrow" width="22" height="22" viewbox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10" stroke-width="2"/>
+                  <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="useful">
+      <div class="container useful__container">
+        <h2 class="title useful__title">Полезное</h2>
+        <div class="swiper-button-prev button">
+          <svg class="button-arrow" width="32" height="32" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle r="15" transform="matrix(-1 0 0 1 16 16)" stroke-width="2"/>
+            <path d="M18 11L13 16L18 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="swiper-button-next button">
+          <svg class="button-arrow" width="32" height="32" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="15" stroke-width="2"/>
+            <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="swiper" id="swiper-3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--1">
+              <article class="card useful__card">
+                <div class="card__top useful__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/useful/1.jpg">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/useful/1.jpg">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/useful/1.jpg">
+                    <img class="card__image" src="./image/320/useful/1.jpg" alt="Гостиная">
+                  </picture>
+                </div>
+                <div class="card__bottom useful__bottom">
+                  <h3 class="card__title visually-hidden">Гостиная</h3>
+                  <p class="useful__description">И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой не что иное?</p>
+                  <a class="link card__link useful__link" href="#">Читать</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--2">
+              <article class="card useful__card">
+                <div class="card__top useful__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/useful/2.jpg">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/useful/2.jpg">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/useful/2.jpg">
+                    <img class="card__image" src="./image/320/useful/2.jpg" alt="Круглый стол">
+                  </picture>
+                </div>
+                <div class="card__bottom useful__bottom">
+                  <h3 class="card__title visually-hidden">Круглый стол</h3>
+                  <p class="useful__description">Как принято считать, некоторые особенности приносят несомненную пользу обществу?</p>
+                  <a class="link card__link useful__link" href="#">Читать</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--3">
+              <article class="card useful__card">
+                <div class="card__top useful__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/useful/3.jpg">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/useful/3.jpg">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/useful/3.jpg">
+                    <img class="card__image" src="./image/320/useful/3.jpg" alt="Ваза с цветами">
+                  </picture>
+                </div>
+                <div class="card__bottom useful__bottom">
+                  <h3 class="card__title visually-hidden">Ваза с цветами</h3>
+                  <p class="useful__description">Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?</p>
+                  <a class="link card__link useful__link" href="#">Читать</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--4">
+              <article class="card useful__card">
+                <div class="card__top useful__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/useful/4.jpg">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/useful/4.jpg">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/useful/4.jpg">
+                    <img class="card__image" src="./image/320/useful/4.jpg" alt="Кухня">
+                  </picture>
+                </div>
+                <div class="card__bottom useful__bottom">
+                  <h3 class="card__title visually-hidden">Кухня</h3>
+                  <p class="useful__description">Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?</p>
+                  <a class="link card__link useful__link" href="#">Читать</a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide swiper-slide--5">
+              <article class="card useful__card">
+                <div class="card__top useful__top">
+                  <picture>
+                    <source media="(min-width: 1101px)"  type="image/jpg" srcset="./image/1920/useful/5.jpg">
+                    <source media="(min-width: 901px) and (max-width: 1100px)" type="image/jpg" srcset="./image/1024/useful/5.jpg">
+                    <source media="(min-width: 601px) and (max-width: 900px)" type="image/jpg" srcset="./image/768/useful/5.jpg">
+                    <img class="card__image" src="./image/320/useful/5.jpg" alt="Зеркало">
+                  </picture>
+                </div>
+                <div class="card__bottom useful__bottom">
+                  <h3 class="card__title visually-hidden">Зеркало</h3>
+                  <p class="useful__description">Как принято считать, некоторые особенности приносят несомненную пользу обществу?</p>
+                  <a class="link card__link useful__link" href="#">Читать</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container contacts__container">
+        <div class="form">
+          <h2 class="title form__title">Мы всегда вам рады!</h2>
+          <p class="form__description">Безусловно, новая модель организационной деятельности в&nbsp;значительной степени обусловливает важность распределения внутренних резервов и&nbsp;ресурсов.
+            <span class="form__tooltip" role="tooltip" tabindex="0" id="tooltip"></span>
+          </p>
+          <form class="form__form" id="contacts-form">
+            <div class="form__input-wrapper">
+              <input class="form__input" type="text" name="name" autocomplete="off" placeholder="Как вас зовут?" data-validate-field="name">
+            </div>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="tel" name="tel" autocomplete="off" placeholder="Ваш телефон" data-validate-field="tel" data-validate-rules="phone">
+            </div>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="email" name="mail" autocomplete="off" placeholder="Ваш e-mail" data-validate-field="mail">
+            </div>
+            <button class="link form__button" type="submit">Отправить</button>
+            <div class="form__input-wrapper">
+              <label class="checkbox-label">
+                <input class="visually-hidden checkbox" type="checkbox" name="checkbox" id="checkbox" data-validate-field="checkbox">
+                Принимаю
+                <span class="customcheck"></span>
+                <a class="form__link" href="#">пользовательское соглашение</a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="social footer__social">
+        <a class="footer__logo-link" href="/">
+          <img class="logo footer__logo" src="./image/sprite.svg#logo" alt="Логотип">
+        </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Фейсбук">
+              <svg class="social__svg">
+                <use xlink:href="./image/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="В контакте">
+              <svg class="social__svg">
+                <use xlink:href="./image/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Инстаграм">
+              <svg class="social__svg">
+                <use xlink:href="./image/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="service footer__service">
+        <li class="service__item service__item--1">
+          <ul class="service__links-list">
+            <li class="service__links-item">
+              <h3 class="title service__title">О нас</h3>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">О компании</a>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Блог</a>
+            </li>
+          </ul>
+        </li>
+        <li class="service__item service__item--2">
+          <ul class="service__links-list">
+            <li class="service__links-item">
+              <h3 class="title service__title">Услуги</h3>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Доставка</a>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Рассрочка и кредит</a>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Сборка и установка</a>
+            </li>
+          </ul>
+        </li>
+        <li class="service__item service__item--3">
+          <ul class="service__links-list">
+            <li class="service__links-item">
+              <h3 class="title service__title">Связь с нами</h3>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Обратная связь</a>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </li>
+        <li class="service__item service__item--4">
+          <ul class="service__links-list">
+            <li class="service__links-item">
+              <h3 class="title service__title">Сотрудничество</h3>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Поставщикам</a>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Оптовикам</a>
+            </li>
+            <li class="service__links-item">
+              <a class="service__link" href="#">Карьера</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright footer__copyright">
+      <div class="container copyright__container">
+        <p class="copyright__text">SDP®&nbsp;&nbsp;&nbsp;2011-2021</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./libs/popper.min.js"></script> <!--ToolTip-->
+  <script src="./libs/tippy-bundle.umd.js"></script> <!--ToolTip-->
+  <script src="./libs/choices.min.js"></script> <!--Select-->
+  <script src="./libs/swiper-bundle.min.js"></script> <!--Swiper-->
+  <script src="./libs/SmoothScroll.min.js"></script> <!--Плавный скролл-->
+  <script src="./libs/inputmask.js"></script>
+  <script src="./libs/just-validate.js"></script>
+  <script src="./js/index.min.js"></script> <!--для разработки и для build-версии-->
+</body>
+</html>
